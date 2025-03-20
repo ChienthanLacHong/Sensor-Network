@@ -187,5 +187,6 @@ int main(void) {
         USART_SendText("Humidity: ");
         USART_SendValue(dataBuffer[0]);
         USART_SendText("%\n");
+				Delay_ms(1000);
     }
 }
