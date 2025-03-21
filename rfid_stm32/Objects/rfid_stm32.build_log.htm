@@ -21,13 +21,19 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-D:\Sensor Network\onewirestm32\stm32.uvprojx
-Project File Date:  03/13/2025
+D:\Sensor Network\rfid_stm32\rfid_stm32.uvprojx
+Project File Date:  03/21/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.22', folder: 'D:\Keil\ARM\ARMCLANG\Bin'
 Build target 'Target_1'
-".\Objects\stm32.axf" - 0 Error(s), 0 Warning(s).
+Note: source file '.\rfid.c' - object file renamed from '.\Objects\rfid.o' to '.\Objects\rfid_1.o'.
+compiling spi.c...
+compiling main.c...
+compiling rfid.c...
+linking...
+Program Size: Code=4996 RO-data=324 RW-data=0 ZI-data=1632  
+".\Objects\rfid_stm32.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -45,6 +51,7 @@ Package Vendor: Keil
    * Component: Framework Version: 3.6.0
    * Component: GPIO Version: 3.6.0
    * Component: RCC Version: 3.6.0
+   * Component: SPI Version: 3.6.0
    * Component: TIM Version: 3.6.0
    * Component: USART Version: 3.6.0
 
@@ -61,33 +68,37 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup@1.0.0
       Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
       Source file:   Device/Source/ARM/startup_stm32f10x_md.s
       Source file:   Device/Source/system_stm32f10x.c
-      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
 
    * Component: Keil::Device:StdPeriph Drivers:Framework@3.6.0
-      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
       Include file:  Device/StdPeriph_Driver/inc/misc.h
-      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
       Source file:   Device/StdPeriph_Driver/src/misc.c
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_conf.h
+      Source file:   Device/StdPeriph_Driver/templates/stm32f10x_it.c
       Include file:  Device/StdPeriph_Driver/templates/stm32f10x_it.h
 
    * Component: Keil::Device:StdPeriph Drivers:GPIO@3.6.0
-      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_gpio.h
       Source file:   Device/StdPeriph_Driver/src/stm32f10x_gpio.c
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_gpio.h
 
    * Component: Keil::Device:StdPeriph Drivers:RCC@3.6.0
       Include file:  Device/StdPeriph_Driver/inc/stm32f10x_rcc.h
       Source file:   Device/StdPeriph_Driver/src/stm32f10x_rcc.c
 
+   * Component: Keil::Device:StdPeriph Drivers:SPI@3.6.0
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_spi.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_spi.c
+
    * Component: Keil::Device:StdPeriph Drivers:TIM@3.6.0
-      Source file:   Device/StdPeriph_Driver/src/stm32f10x_tim.c
       Include file:  Device/StdPeriph_Driver/inc/stm32f10x_tim.h
+      Source file:   Device/StdPeriph_Driver/src/stm32f10x_tim.c
 
    * Component: Keil::Device:StdPeriph Drivers:USART@3.6.0
-      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_usart.h
       Source file:   Device/StdPeriph_Driver/src/stm32f10x_usart.c
-Build Time Elapsed:  00:00:00
+      Include file:  Device/StdPeriph_Driver/inc/stm32f10x_usart.h
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
